@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+  <head>
+	  <!-- <link rel="icon" href="http://example.com/favicon.png"> --> <!-- por is quiero agregar un icono ne  la web -->
+    <title>Calcula tu IMC</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Description" CONTENT="Solo yo aprendiendo cosas random">
+	  <meta name="robots" content="index,nofollow">
+    <meta name="keywords" content="mi primera pagina, mi primera web, apendiendo">
+    
+    <link rel="stylesheet" href="css/style-social.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style-fondo.css">
+    <script defer src="js/javascript-index.js">
+
+    </script>
+
+ <!-- id identifica un solo elemento, clases es para tener varias que comparten lo mismo-->
+
+  </head>  <!--En head se pone info para el navegador y google-->
+      
+	<body>
+    <header class="cabecera">
+      <nav class="menu">
+        <a href="https://www.djvemo.net.pe"><img src="media/imagenes/logo.png" alt="Logo" class="logo navega"></a>
+        <button class="selector">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="navega-menu" aria-label="Abrir menu">
+         <!-- falta el hover backgorun permanente para saber el menu  style="background-color: #034574;" -->
+          <li class="item"><a href="calculando_imc.html" class="link navega activo">Calcula tu IMC</a></li> 
+          <li class="item"><a href="videos.html" class="link navega activo">Videos</a></li>
+          <li class="item"><a href="about.html" class="link navega activo">Sobre Mi</a></li>
+          <li class="item"><a href="encuesta.html" class="link navega activo">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <br>
+    <h2 id="redes">Mis redes</h2>
+   	<br /> <!-- salto de linea --> 
+    <div class="buttons">
+      <a href="https://www.twitch.tv/djvemo" class="twitch" target="_blank" title="Sigueme en Twitch"><i class="fa-brands fa-twitch" aria-hidden="true"></i></a>
+      <a href="https://discord.gg/Nm2UHXX3Q3" class="dc" target="_blank" title="Unete al Discord"><i class="fa-brands fa-discord" aria-hidden="true"></i></a>
+      <a href="https://www.youtube.com/c/djvemochannel" class="yt" target="_blank" title="Sigueme en Youtube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+      <a href="https://www.tiktok.com/@djvemo" class="tt" target="_blank" title="Sigueme en Tiktok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/djvemo" class="tw" target="_blank" title="Sigueme en Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+      <a href="" class="insta" title="Sigueme en Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+    </div>
+		<h1><br>PROGRAMA QUE CALCULA TU IMC</h1><br>
+        <!-- name es el nombre de la variable de lo ingresado mientras id es para identificar el cuadro con un label -->
+		<label for="nombre">Ingrese su nombre:</label>
+        <input type="text" id="nombre" required /> <br>
+
+        <label for="altura">Ingrese su altura (m):</label>
+        <input type="text" id="altura" required/> <br>
+
+        <label for="peso">Ingrese su peso (kg):</label>
+        <input type="text" id="peso" required/> <br>
+
+        <button type="button" onclick="obtenerVariable()">Enviar</button>
+    	<p id="resultado"></p>
+
+
+    <script>
+    	function calcularImc(peso,altura){
+     		var imc;
+     		imc= peso/(altura*altura);
+      		return imc;
+    	}
+
+    	function obtenerVariable(){
+    		var nombre,altura,peso,imc;
+
+    		nombre= document.getElementById("nombre").value; //obtiene lo ingresado
+    		altura= document.getElementById("altura").value; //obtiene lo ingresado
+    		peso= document.getElementById("peso").value; //obtiene lo ingresado
+    		imc=Math.round(calcularImc(peso,altura));
+    		document.getElementById("resultado").innerHTML = "Querido "+nombre+" su IMC es: "+imc; //envia lo ingresado
+    		
+    	}
+
+    </script>
+    
+    <audio hidden controls autoplay loop controlsList="nodownload">  
+				<source src="/media/musicas/perfect_time.mp3">
+    </audio>
+  </body>
+</html>
+

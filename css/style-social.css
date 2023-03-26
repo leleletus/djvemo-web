@@ -1,0 +1,132 @@
+.buttons 
+.twitch, 
+.dc, 
+.yt, 
+.tt, 
+.tw, 
+.insta {
+  display: inline-block;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 1.5626rem;
+  font-weight: norma;;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+  
+}
+
+.buttons 
+.twitch:hover, 
+.dc:hover, 
+.yt:hover, 
+.tt:hover, 
+.tw:hover, 
+.insta:hover,
+.buttons 
+.twitch:focus, 
+.dc:focus, 
+.yt:focus, 
+.tt:focus, 
+.tw:focus, 
+.insta:focus {
+  -webkit-transform: rotate (360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.buttons
+.fa-twitch, 
+.fa-discord, 
+.fa-youtube, 
+.fa-tiktok, 
+.fa-twitter, 
+.fa-instagram {
+  font-size: 30px;
+}
+
+.buttons
+.twitch {
+  background: #9146FF;
+  color: white;
+}
+.buttons
+.twitch:hover,
+.buttons
+.twitch:focus {
+  background: white;
+  color: #9146FF;
+}
+
+.buttons
+.tt {
+  background: #FE2C55;
+  color: white;
+}
+.buttons
+.tt:hover,
+.buttons
+.tt:focus {
+  background: white;
+  color: #FE2C55;
+}
+
+.buttons
+.tw {
+  background: #1DA1F2;
+  color: white;
+}
+.buttons
+.tw:hover,
+.buttons
+.tw:focus {
+  background: white;
+  color: #1DA1F2;
+}
+
+.buttons
+.dc {
+  background: #5865F2;
+  color: white;
+}
+.buttons
+.dc:hover,
+.buttons
+.dc:focus {
+  background: white;
+  color: #5865F2;
+}
+
+.buttons
+.yt {
+  background: #bb0000;
+  color: white;
+}
+.buttons
+.yt:hover,
+.buttons
+.yt:focus {
+  background: white;
+  color: #bb0000;
+}
+
+.buttons
+.insta {
+  background: #F56040;
+  color: white;
+}
+.buttons
+.insta:hover,
+.buttons
+.insta:focus {
+  background: white;
+  color: #F56040;
+}

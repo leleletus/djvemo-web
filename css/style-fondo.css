@@ -1,0 +1,124 @@
+#redes {
+  cursor: pointer;
+  width: auto;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  color: green;
+}
+
+* { /* afecta a todo */
+  margin: 0; /* tener 0 margenes */
+  box-sizing: border-box; /* redimensionar tamaño */
+}
+
+body {
+  background: linear-gradient(to bottom, rgba(180,227,145,1) 0%,rgba(97,196,25,1) 50%,rgba(180,227,145,1) 100%); /* fondo degradado */
+  font-family: sans-serif; /* font de texto */
+  padding: 90px 20px 0; /* espacios  arriba izquierda/derecha  abajo */
+}
+
+.cabecera {
+  background-color: #0769E9; /* color */
+  height: 80px; /* altura */
+  position: fixed; /* siempre se queda en posicion aunque scrolee  tambien sticky*/
+  width: 100%; /* ancho */
+  top: 0; /* respecto arriba en 0 */
+  left: 0; /* respecto izquierda 0 */
+}
+      
+.menu {
+  display: flex; /* como cajas contenedoras flexibles */
+  justify-content: space-between; /* justifica y pone espacio en centro */
+  
+  max-width: 1920px; /*  breakpoint */
+  margin: 0 auto; /* arriba/abjo  izquierda/derecha */
+}
+
+.navega { /* quitar el azul y subrayado de enlaces */
+  color: white;
+  text-decoration: none; /* quita el subrayad8 */
+  
+  max-width: 992px;
+
+}
+
+.logo{
+  width:auto;
+  height:80px;
+}
+
+.navega-menu {
+  display: flex; /* en horizontal */
+  margin-right: 40px; /* margen a la derecha */
+  list-style: none; /* quitar los puntos que se ponen por ser ul */
+}
+
+.item {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase; /* los pone en mayuscula */
+  width: max-content; /* para no perder las letras si la pantalla es muy chica */
+}
+
+.link{ /* los li (listado) */
+  padding: 8px 12px;  /*   */
+  border-radius: 30px; /* se vuelve borde circular  */
+}
+
+.link:hover,
+.activo:hover{
+  background-color: #034574;
+  width: max-content; /* para no perder las letras si la pantalla es muy chica */
+  transition: 0.5s;
+}
+
+.selector {
+  color: white;
+  background: none; /* quitamos el fondo */
+  border: none; /* quitamos sus bordes */
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  
+  width: max-context;
+  cursor: pointer;
+  margin-left: 80px; /* margen a la derecha */
+  display: none; /* no se ve cuando estamos en escritorio, solo celular */
+}
+
+
+
+@media(max-width: 768px) { /* si el dispositivo tiene menos de 768 */
+  .navega-menu{
+    flex-direction: column; /* en vertical */
+    align-items: center;
+    margin-right: 20px; /* margen a la derecha */
+    background-color: black;
+    position: fixed;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    padding: 20px 0;
+    
+    height: calc(100%-80px);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+  }
+  .link:hover,
+  .activo:hover{
+  background: none;
+  color: yellow;
+  }
+  .selector{ /* mmostrar el boton */
+    display: block;
+  }
+  .visible{  /* se hace visible el menu */
+    left: 0;
+    transition: left 0.3s;
+  }
+  
+} 

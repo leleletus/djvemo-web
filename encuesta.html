@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+  <head>
+	  <!-- <link rel="icon" href="http://example.com/favicon.png"> --> <!-- por is quiero agregar un icono ne  la web -->
+    <title>djvemo web-page</title>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Description" CONTENT="Solo yo aprendiendo cosas random">
+	  <meta name="robots" content="index,nofollow">
+    <meta name="keywords" content="mi primera pagina, mi primera web, apendiendo">
+    
+    <link rel="stylesheet" href="css/style-social.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style-fondo.css">
+    <script defer src="js/javascript-index.js">
+
+    </script>
+
+ <!-- id identifica un solo elemento, clases es para tener varias que comparten lo mismo-->
+
+  </head>  <!--En head se pone info para el navegador y google-->
+      
+	<body>
+    <header class="cabecera">
+      <nav class="menu">
+        <a href="https://www.djvemo.net.pe"><img src="media/imagenes/logo.png" alt="Logo" class="logo navega"></a>
+        <button class="selector">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="navega-menu" aria-label="Abrir menu">
+          <li class="item"><a href="calculando_imc.html" class="link navega activo">Calcula tu IMC</a></li>
+          <li class="item"><a href="videos.html" class="link navega activo">Videos</a></li>
+          <li class="item"><a href="about.html" class="link navega activo">Sobre Mi</a></li>
+          <li class="item"><a href="encuesta.html" class="link navega activo">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <h2 id="redes">Mis redes</h2>
+   	<br /> <!-- salto de linea --> 
+    <div class="buttons">
+      <a href="https://www.twitch.tv/djvemo" class="twitch" target="_blank" title="Sigueme en Twitch"><i class="fa-brands fa-twitch" aria-hidden="true"></i></a>
+      <a href="https://discord.gg/Nm2UHXX3Q3" class="dc" target="_blank" title="Unete al Discord"><i class="fa-brands fa-discord" aria-hidden="true"></i></a>
+      <a href="https://www.youtube.com/c/djvemochannel" class="yt" target="_blank" title="Sigueme en Youtube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+      <a href="https://www.tiktok.com/@djvemo" class="tt" target="_blank" title="Sigueme en Tiktok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/djvemo" class="tw" target="_blank" title="Sigueme en Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+      <a href="" class="insta" title="Sigueme en Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+    </div>
+
+
+   
+		<br /> <!-- salto de linea --> 
+		 <form>
+        <!-- name es el nombre de la variable de lo ingresado mientras id es para identificar el cuadro con un label -->
+        <label for="cuadro1">Usuario:</label>
+        <input type="text" name="escrito" id="cuadro1" required/> <br />
+        <label for="correo">Correo:</label>
+        <input type="email" name="correo" id="correo" required/> <br />
+        <label for="clave">Contrase&ntilde;a:</label>
+        <input type="password" name="contrasena" id="clave" required/> <br />
+    </form>
+
+    <!-- para seleccionar 1 , si agrupamos otros cambiar name -->
+    <p>Pon tu edad:</p>
+    <input type="radio" name="edad" value="5-10" id="opcion1" />
+    <label for="opcion1">5-10:</label> <br />
+    <input type="radio" name="edad" value="11-15" id="opcion2" />
+    <label for="opcion2">11-15:</label> <br />
+    <input type="radio" name="edad" value="16-20" id="opcion3" />
+    <label for="opcion3">16-20:</label> <br />
+    <input type="radio" name="edad" value="21-25" id="opcion4" />
+    <label for="opcion4">21-25:</label> <br />
+    <input type="radio" name="edad" value="25-30" id="opcion5" />
+    <label for="opcion5">26-30:</label> <br />
+    <input type="radio" name="edad" value="31-35" id="opcion6" />
+    <label for="opcion6">31-35:</label> <br /> <br />
+
+    <label for="preguntas">Preguntas de Seguridad:</label>
+    <select name="preguntas" id="preguntas">
+        <option value="pregunta1">&iquest;Cu&aacute;l es tu color favorito?</option>
+        <option value="pregunta2">&iquest;Cu&aacute;l es tu comida favorita?</option>
+        <option value="pregunta3">&iquest;Pizza con pi&ntilde;a sin pi&ntilde;a?</option>
+    </select>
+    <label for="respuestas">&nbsp;Respuesta:</label>
+    <input type="text" name="respuestas" id="respuestas" /> <br />
+
+    <label for="muchotexto">Tu historia:</label> <br />
+    <textarea name="muchotexto" id="muchotexto" cols="30" rows="5" placeholder="Esto es un texto de ejemplo, aqui dentro tienes que escribirme la triste historia de tu vida"></textarea> <br />
+
+    <input type="submit" value="finalizar encuesta" />
+  
+  <br> <img src="https://media.tenor.com/67qTcyIjsm4AAAAi/anime-tonikaku-kawaii.gif" alt="Tsukasita dancing">
+  
+  <audio hidden controls autoplay loop controlsList="nodownload">  
+				<source src="/media/musicas/distraction.m4a">
+    </audio>
+   
+	</body>
+<html>
